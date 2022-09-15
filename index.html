@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatives</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- start of color filter section -->
+    <div class="filter">
+        <h2>Filter By</h2>
+        <div style="display:flex;">
+            <div id="color">
+                <b style="font-size:19px ;">Color:</b>
+                <div class="colors">
+                    <div class="circle" style="background-color:lightblue ;"></div>
+                    <div class="circle" style="background-color:lightgreen ;"></div>
+                    <div class="circle" style="background-color: lightcoral;"></div>
+                    <div class="circle" style="background-color: lightgray;"></div>
+                </div>
+                <div class="colors">
+                    <div class="circle" style="background-color: lightskyblue;"></div>
+                    <div class="circle" style="background-color: yellow;"></div>
+                    <div class="circle" style="background-color: lightpink;"></div>
+                    <div class="circle" style="background-color: burlywood;"></div>
+                </div>
+            </div>
+            <span style="width: 10%;"></span>
+            <div class="title">
+                <label for="title"><b>Title/Sub Title</b></label>
+                <input type="text" name="title" placeholder=" Enter Title" oninput="filterByTitle(event)">
+            </div>
+        </div>
+        <div style="margin-top: 15%;">
+            <h3>Items Created: </h3>
+            <div class="bar_container">
+                <div class="progress_bar"></div>
+            </div>
+            <div class="indicator">
+                <center><b id="itemNum">0/5 Creatives</b></center>
+            </div>
+        </div>
+        <div class="addCreatives">
+            <center><button onclick="openDrawer()">+ Add Creatives</button></center>
+            <center><a href=""><button onclick="deleteCreatives()">Delete All</button></a></center>
+        </div>
+        <div class="filteredItems">
+            <div class="myitem"></div>
+            <div class="myitem"></div>
+            <div class="myitem"></div>
+            <div class="myitem"></div>
+            <div id="lastitem" class="myitem"></div>
+
+        </div>
+    </div>
+    <!-- end of filter section -->
+
+    <!-- start of creative creation section -->
+    <div class="drawer">
+        <a href="" onclick="closeDrawer()" class="closebtn" style="font-size: 40px;">&times;</a>
+
+        <div class="creation">
+            <center>
+                <h2>Creative Creation</h2>
+            </center>
+            <div class="title">
+                <!-- <label for="addTitle">Title</label> -->
+                <b>Title</b>
+                <input type="text" name="addTitle" placeholder="enter title" oninput="getTitle(event)">
+                <p id="title0" style="color:rgb(209, 31, 31)"></p>
+            </div>
+            <div class="title">
+                <label for="subtitle"><b>Sub Title</b></label>
+                <input type="text" name="subtitle" placeholder="enter subtitle" oninput="getSubTitle(event)">
+                <p id="Subtitle0" style="color:rgb(190, 33, 33)"></p>
+            </div>
+            <div></div>
+            <div id="verifyColor"></div>
+            <div style="margin-top:35px ;">
+                <label for="inpColor"><b>Edit Color:</b></label>
+                <input type="color" value="#ff00c0" name="inpColor" oninput="edit(event)">
+            </div>
+        </div>
+        <div>
+            <center><button onclick="storeData()">Done</button></center>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

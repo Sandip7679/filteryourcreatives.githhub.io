@@ -1,0 +1,126 @@
+
+body {
+    margin-left: 10%;
+   border-style: solid;
+   display: flex;
+   height: 650px;
+   width: 60%;
+}
+
+.filter {
+   margin: 2%;
+   width: 100%;
+   overflow:auto;
+}
+
+input,label {
+   display: block;
+   margin-top: 4px;
+}
+
+.colors {
+   margin-top: 5%;
+   display: flex;
+   flex-wrap: nowrap;
+   height: 50%;
+   width: 100%;
+}
+
+.circle {
+   margin-left: 10px;
+   height: 30px;
+   width: 30px;
+   border-radius: 15px;
+}
+
+.progress_bar {
+   margin-top: 2%;
+   height: 9px;
+   width: 0%;
+   background-color: rgb(27, 48, 18);
+   border-radius: 50px;
+   transition-duration: 1s;
+   transition-property: width;
+}
+
+.bar_container {
+   height: 9px;
+   width: 80%;
+   margin-left: 10px;
+   background-color: rgb(205, 218, 223);
+   border-radius: 10px;
+   
+}
+
+.addCreatives {
+   margin-top: 50px;
+   margin-left: 15%;
+   margin-bottom: 1%;
+   width: 70%;
+   display: flex;
+   justify-content: space-around;
+}
+button{
+   cursor: pointer;
+}
+
+
+.drawer {
+   margin-left: 0%;
+   width: 80%;
+   display: none;
+   border-style: groove;
+}
+
+.creation {
+   margin-left: 10px;
+   height: 70%;
+   width: 100%;
+}
+
+.title {
+   margin-top: 10%;
+}
+
+#color {
+   margin-top: 4%;
+}
+
+.onclickColor {
+   border-style: solid;
+   margin-left: 10px;
+   height: 30px;
+   width: 30px;
+   border-radius: 25px;
+}
+
+#verifyColor{
+   margin-top: 10px;
+   color: rgb(214, 37, 37);
+}
+.myitem{
+   margin-top: 10%;
+   display:flex;
+}
+.filteredItems{
+   height: 0px;
+}
+.itemcreated{
+   width: 70%;
+   max-height: 120px;
+   padding: auto;
+   padding-bottom: 4%;
+   text-align:center;
+   overflow:auto;
+   /* overflow-wrap:break-word; */
+}
+.itemdelete{
+   height: 2%;
+   margin-top: 30px;
+   margin-left: 2%;
+   
+   display:flex;
+}
+.itemdelete>button{
+   font-size: 90%;
+}
